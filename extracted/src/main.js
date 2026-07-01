@@ -60,7 +60,7 @@ document.querySelectorAll('.counter').forEach(el => counterObs.observe(el));
       const p = Math.min(1, Math.max(0, (start - r.top) / (start - end)));
       const scale = 1 - p * 0.04 * (cards.length - i);
       card.style.setProperty('--s', scale);
-      card.style.opacity = 1 - p * 0.14;
+      card.style.opacity = 1;
     });
   };
 
