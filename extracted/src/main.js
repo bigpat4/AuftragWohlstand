@@ -121,6 +121,12 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     scale: 1.06, opacity: 0, duration: 1.15, ease, delay: 0.1
   });
 
+  // Pillars intro heading
+  g.from('.pillars-intro > *', {
+    scrollTrigger: { trigger: '.pillars', start: 'top 80%' },
+    y: 26, opacity: 0, duration: 0.68, stagger: 0.13, ease
+  });
+
   // Pillar cards — stagger left to right
   g.from('.pillar', {
     scrollTrigger: { trigger: '.pillars-grid', start: 'top 82%' },
